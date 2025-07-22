@@ -83,7 +83,7 @@
                         {{if .IsOrganizationOwner}}
                             <div class="ui bottom attached segment">
                                 <a class="ui blue small button"
-                                   href="{{.OrgLink}}/teams/new">{{.i18n.Tr "org.create_new_team"}}</a>
+                                   href="{{.OrgLink}}/teams/new">{{ctx.Locale.Tr "org.create_new_team"}}</a>
                             </div>
                         {{end}}
                     {{end}}

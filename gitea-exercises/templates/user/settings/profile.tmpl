@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="field {{if .Err_Gravatar}}error{{end}}">
-                        <label for="gravatar">Avatar {{.i18n.Tr "email"}}</label>
+                        <label>Avatar {{ctx.Locale.Tr "email"}}</label>
                         <input id="gravatar" name="gravatar" value="{{.SignedUser.AvatarEmail}}" />
                     </div>
                 {{end}}

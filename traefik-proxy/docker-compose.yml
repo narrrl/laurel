@@ -31,7 +31,7 @@ services:
       # Specify a way to generate SSL certificates using lets encrypt. We call it `https_resolver`.
       - "--certificatesresolvers.https_resolver.acme.httpchallenge=true"
       - "--certificatesresolvers.https_resolver.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.https_resolver.acme.email=USER@EMAIL.MAIL"
+      - "--certificatesresolvers.https_resolver.acme.email=nils@narl.io"
       - "--certificatesresolvers.https_resolver.acme.storage=/lets_encrypt/acme.json"
 
       # Logging

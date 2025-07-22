@@ -50,7 +50,7 @@
                                     </li>
                                 {{end}}
                             {{end}}
-                            <li>{{svg "octicon-clock"}} {{.i18n.Tr "user.join_on"}} {{.Owner.CreatedUnix.FormatShort}}</li>
+                            <li>{{svg "octicon-clock"}} {{ctx.Locale.Tr "user.join_on"}} {{.Owner.CreatedUnix.FormatShort}}</li>
                             {{if .Orgs}}
                                 <li>
                                     <ul class="user-orgs">

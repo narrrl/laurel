@@ -67,7 +67,7 @@
                         {{if .CanUploadFile}}
                             <a href="{{.RepoLink}}/_upload/{{EscapePound .BranchName}}/{{EscapePound .TreePath}}"
                                class="ui button">
-                                {{.i18n.Tr "repo.editor.upload_file"}}
+                                {{ctx.Locale.Tr "repo.editor.upload_file"}}
                             </a>
                         {{end}}
                     {{end}}

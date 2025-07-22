@@ -1,8 +1,8 @@
 <footer>
     <div class="ui container">
         <div class="ui left">
-            {{.i18n.Tr "powered_by" "Laurel"}} - {{if ShowFooterTemplateLoadTime}}{{.i18n.Tr "page"}}:
-            <strong>{{LoadTimes .PageStartTime}}</strong> {{.i18n.Tr "template"}}:
+            {{ctx.Locale.Tr "powered_by" "Laurel"}} - {{if ShowFooterTemplateLoadTime}}{{ctx.Locale.Tr "page"}}:
+            <strong>{{LoadTimes .PageStartTime}}</strong> {{ctx.Locale.Tr "template"}}{{if .TemplateName}} {{.TemplateName}}{{end}}:
             <strong>{{call .TmplLoadTimes}}</strong>{{end}}
         </div>
         <div class="ui right links">
